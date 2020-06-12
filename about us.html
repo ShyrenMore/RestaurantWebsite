@@ -5,12 +5,51 @@
 
     <!-- Bootstrap CSS  -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-
+    <!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Ristorante Con Fusion: About Us</title>
 
 
 <body>
+
+    <nav class="navbar navbar-dark navbar-expand-sm">
+        <!-- navbar-expand-sm means for small and extra-small screens this navbar will become toggleable navbar  -->
+        <!-- fixed-top means it fixes the navbar at the top of browser window i.e even if you scroll you'll still see navbar  -->
+
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+
+                <!-- this button is for collapsing/ toggling when wesbite is viewed on mobile  -->
+                <!-- data-toggle and data-target is javascript component in bootstrap  -->
+
+                <span class="navbar-toggler-icon"></span>
+
+                <!-- navbar-toggler-icon gives us the toggler icon  o-->
+
+            </button>
+
+            <a class="navbar-brand mr" href="Home.html">Logo here or company name</a>
+            <div class="collapse navbar-collapse" id="Navbar">
+                <ul class="navbar-nav mr-auto">
+                    <!-- navbar-nav helps in linking other pages on nav bar  -->
+                    <!-- The mr auto-class that I have also applied to the ul, is used to specify the right margin. So this is a utility class that is available in bootstrap that allows me to specify the right margin.what it means is that on the right side, the right margin should be set as much as possible. So which means that the content will be pushed as left as possible within the navigation bar.  -->
+
+                    <!-- active is the page the user is seeing  -->
+
+                    <li class="nav-item"><a class="nav-link" href="Home.html"><span class="fa fa-home fa-sm"></span>
+                            Home</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="about us.html"><span
+                                class="fa fa-info fa-lg"></span> About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-sm"></span> Menu</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-address-card fa-sm"></span>
+                            Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <header class="jumbotron">
         <div class="container">
@@ -27,6 +66,11 @@
     </header>
 
     <div class="container">
+        <ol class="col-12 breadcrumb">
+            <li class="breadcrumb-item"><a href="Home.html">Home</a></li>
+            <li class="breadcrumb-item active">About Us</li>
+        </ol>
+        
         <div>
             <div>
                 <h3>About Us</h3>
@@ -80,7 +124,7 @@
 
     </div>
 
-    <footer class="footer">
+    <footer>
         <div class="container">
             <div class="row">
                 <div class="col-4 offset-1 col-sm-2">

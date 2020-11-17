@@ -1,2 +1,3 @@
-# Bootstrap4
-This repo contains the files which I used/developed while learning Bootstrap4.5
+# Restaurant website
+
+A simple restaueant website made using Boostrap4 components.
